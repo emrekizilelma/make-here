@@ -7,7 +7,7 @@ void make_c() {
     system("touch Makefile1");
 
     FILE *in_file  = fopen("Makefile1", "r"); // read only
-          FILE *out_file = fopen("Makefile1", "w"); // write only
+    FILE *out_file = fopen("Makefile1", "w"); // write only
           
           // test for files not existing.
           if (in_file == NULL || out_file == NULL)

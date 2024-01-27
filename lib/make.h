@@ -1,6 +1,7 @@
 #ifndef MAKE_H
 #define MAKE_H
 
-void _make_();
+void make_template();
+
 
 #endif

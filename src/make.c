@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <unistd.h>
+#include <string.h>
 
-void make_test() {
-    printf("main.c\n");
+void make_c() {
+
+}
+
+void make_template(char* lang) {
+    printf("\n[WORKING] make_template()\n");
+    
 }

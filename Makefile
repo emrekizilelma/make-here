@@ -3,10 +3,10 @@ LIBS   = lib
 CFLAGS = -g -Wall -pedantic -std=c17
 FILES  = $(wildcard src/*.c)
 OUT    = out
-MAIN   = main.c
+MAIN   =
 
 all:
-	$(CC) $(MAIN) $(FILES) -o $(OUT) -I $(LIBS) $(CFLAGS)
+	$(CC) $(FILES) -o $(OUT) -I $(LIBS) $(CFLAGS)
 	./$(OUT)
 
 

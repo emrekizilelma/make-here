@@ -1,6 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
-#include <stdbool.h>
 
 #include <make.h>
 #include <getcwd.h>
@@ -14,7 +14,7 @@ int main(int argc, char* argv[]) {
         }
 
         else {
-            printf("No argument given\n");
+            printf("No argument given or wrong lang.\n");
         }
     }
   

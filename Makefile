@@ -1,17 +1,14 @@
-CC     = gcc
-LIBS   = lib
-CFLAGS = -g -Wall -pedantic -std=c17
-FILES  = $(wildcard src/*.c)
-OUT    = make_here
-MAIN   =
+CC = gcc
+CFLAGS = -Wall -Wextra -std=c23
+SRC = $(wildcard src/*.c)
+INCLUDE = include
+OUT = make_here
 
-all:
-	$(CC) $(FILES) -o $(OUT) -I $(LIBS) $(CFLAGS)
-	./$(OUT)
+all: compile run
 
 
 compile:
-	$(CC) $(FILES) -o $(OUT) -I $(LIBS) $(CFLAGS)
+	$(CC) $(SRC) -o $(OUT) -I $(INCLUDE) $(CFLAGS)
 
 run:
 	./$(OUT)

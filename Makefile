@@ -1,14 +1,13 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c23
+CFLAGS = -Wall -Wextra -std=c2x
 SRC = $(wildcard src/*.c)
-INCLUDE = include
 OUT = make_here
 
 all: compile run
 
 
 compile:
-	$(CC) $(SRC) -o $(OUT) -I $(INCLUDE) $(CFLAGS)
+	$(CC) $(SRC) -o $(OUT) $(CFLAGS)
 
 run:
 	./$(OUT)

@@ -5,10 +5,10 @@
 
 const char* file_name = "Makefile";
 
-struct Lang {;
+/*struct Lang {;
 	char* flags;
 };
-
+*/
 bool is_file_exist(const char* file_name) {
 	FILE* file = fopen(file_name, "r");
 	bool is_exist = false;
@@ -18,17 +18,15 @@ bool is_file_exist(const char* file_name) {
 }
 
 void make_c(const char* file) {
-	if (is_file_exist(file)) {
-		printf("[ERROR] File is already exist!");
-	}
-	else
-		fopen(file_name, "w");
+	if (is_file_exist(file)) { printf("[ERROR] File is already exist!"); }
+
+	else fopen(file_name, "w");
 }
 
 int main(int argc, char* argv[]) {
 	if(strcmp(argv[1], "c") == 0) {
-		struct Lang clang = {"gcc -Wall -Wextra std=c2x"};
-		
+		//...
 	}
+		
 	return EXIT_SUCCESS;
 }
